@@ -1,6 +1,49 @@
 
 body{
+	background-color: #d9d9d9;
 	nav{
+		position: relative;
+		user-select: none;
+		&::before{
+			content: "";
+			position: absolute;
+			top: 0; left: 0; right: 0;
+			width: 100%;
+			height: 62px;
+			background: url(/images/banner/bg.jpg) repeat-x top center rgba(26,26,26,0.1);
+			z-index: -1;
+		}
+		box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+		input{
+			background-color: transparent!important;
+			border: none!important;
+			border-bottom: 1px solid!important;
+			border-radius: 0!important;
+			border-color: #ffffff91!important;
+			&:focus{
+				box-shadow: none!important;
+				border-color: #fff!important;
+			}
+		}
+		.btn-cart{
+			position: relative;
+			&::after{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				content: "1";
+				position: absolute;
+				background-color: #87b000;
+				top: -10px;
+				right: -10px;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				font-size: 12px;
+				font-weight: bold;
+				color: #fff;
+			}
+		}
 		.dropdown-item-arrow{
 			&::after{
 				font-family: fontawesome;
@@ -15,27 +58,353 @@ body{
 					font-size: 10px;
 					content: "\f101 ";
 					padding: 0 10px;
-
 				}
 			}
 		}
-		.dropdown-menu li {
-			position: relative;
-		}
-		.dropdown-menu .dropdown-submenu {
+		.dropdown-submenu {
 			display: none;
 			position: absolute;
 			left: 100%;
-			top: -476px;
+			top: 0;
+			width: 666px;
+			height: 506px;
+			background-color: rgb(218, 218, 218);
+			padding: 20px;
+			border-radius: 5px;
+			border: 1px solid rgba(0,0,0,0.175);
+			box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+			.card-link{
+				text-decoration: none;
+			}
+			.card{
+				box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+				border-radius: 0;
+				border: 0;
+				img{
+					border-radius: 0;
+				}
+				.card-content-padding{
+					padding: 8px 8px 8px 8px;
+				}
+			}
+			.col:hover{
+				cursor: pointer;
+				.btn-light{
+					background-color: #87b000;
+					color: #fff;
+				}
+			}
+			.fa-brands{
+				opacity: 0.4;
+				color: #000;
+			}
+			.btn{
+				font-size: 11px;
+			}
+			.btn-price{
+				border: 1px solid rgba(0,0,0,0.175);
+				box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+				font-weight: bold;
+			}
+			.btn-outline-secondary{
+				box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+			}
 		}
-		.dropdown-menu > li:hover > .dropdown-submenu {
+		li:hover > .dropdown-submenu {
 			display: block;
 		}
 	}
 	header{
+		.highlight{
+			height: 400px;
+			background-image: url(/images/banner/baldursgateBg.webp);
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-bottom: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			.highlight-content{
+				display: flex;
+				height: 100%;
+				max-width: 1275px;
+				width: 1275px;
+				.highlight-itemsL{
+					height: 100%;
+					width: 50%;
+					color: #fff;
+					display: flex;
+					flex-direction: column;
+					justify-content:end;
+					h3{
+						justify-self: flex-end;
+					}
+				}
+				.highlight-itemsR{
+					align-self: flex-end;
+					height: 30%;
+					width: 50%;
+					display: flex;
+					align-items: flex-end;
+					justify-content: flex-end;
+					gap: 20px;
+					button{
+						margin-bottom: 10px;
+						color: #fff;
+						font-size: 25px;
+						padding: 10px 15px;
+						font-weight: 500;
+					}
+					.btn-purple{
+						background-color: purple;
+					}
+					.btn-green{
+						background-color: #87b000;
+						color: #000;
+					}
+				}
+			}
+		}
+		.section-divider{
+			border-bottom: 1px solid #b8b8b8;
+			.fa-highlighter{
+				font-size: 18px;
+			}
+			h2{
+				font-size: 18px;
+			}
+		}
+		.arrow-icon{
+			font-size: 35px;
+			border-radius: 50%;
+			filter: drop-shadow(5px 5px 5px rgba(0,0,0,1));
+		}
+		.carousel-inner {
+			border-radius: 10px;
+			background-color: rgba(0,0,0,0);
+			overflow: hidden;
+		}
 	}
 	main{
+		margin-top: 100px;
 	}
 	footer{
+		background-color: #262626;
+		height: fit-content;
+		&::after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 4px;
+			background: url(/images/banner/footer-border.jpg) center center;
+		}
+		.footer-container {
+			.footer-row{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 20px 10%;
+			}
+			.f-row1{
+				div > a{
+					color: #ffffff94;
+					text-decoration: none;
+					font-size: 14px;
+					transition: color 300ms ease;
+					&:hover{
+						color: #fff;
+					}
+				}
+				.f-row1-left{
+					display: flex;
+					gap: 20px;
+				}
+				.f-row1-right{
+					display: flex;
+					gap: 10px;
+					a{
+						font-size: 18px;
+					}
+				}
+			}
+			.f-row2{
+				display: flex;
+				align-items: center;
+				height: fit-content;
+				background-color: #464646;
+				padding: 10px 10%;
+				.f-row2-left{
+					display: flex;
+					gap: 20px;
+					.footer-logo{
+						display: flex;
+						flex-direction: column;
+						img{
+							width: 50px
+						}
+						p{
+							color: #fff;
+							font-size: 10px;
+							letter-spacing: 1px;
+							margin: 0;
+						}
+					}
+					.footer-table{
+						color: #ffffff94;
+						font-size: 12px;
+						th, td{
+							padding: 5px 10px 0px 10px;
+							a{
+								text-decoration: none;
+								color: #ffffff94;
+								transition: color 300ms ease;
+								&:hover{
+									color: #fff;
+								}
+							}
+							.active{
+								color: rgb(255, 123, 237);
+							}
+						}
+					}
+				}
+				.f-row2-right{
+					a{
+						color: #fff;
+						text-decoration: none;
+						.download-btn{
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							gap: 20px;
+							background-image: url(/images/galaxy_button_bg.jpg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							padding: 10px 15px;
+							border-radius: 10px;
+							box-shadow: inset 0px 0px 5px rgba(255,255,255,1), 3px 3px 5px rgba(0,0,0,.3);
+							transition: box-shadow 100ms ease;
+							small{
+								margin: 0;
+								padding: 0;
+								font-size: 10px;
+								line-height: normal;
+							}
+							h6{
+								margin: 0;
+								padding: 0;
+								line-height: normal;
+								font-weight: normal;
+							}
+						}
+						&:hover > .download-btn{
+							box-shadow: inset 0px 0px 10px rgba(255,255,255,1), 3px 3px 5px rgba(0,0,0,.3);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	body{
+		header{
+			.highlight{
+				.highlight-content{
+					height: 100%;
+					width: 100%;
+					margin: 0 50px;
+					.highlight-itemsR{
+						button{
+							font-size: 18px;
+							padding: 5px 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	body{
+		nav{
+			li:hover > .dropdown-submenu {
+				display: none;
+			}
+		}
+		header{
+			.carousel-item{
+				&:first-child{
+					img{
+						transform: translateX(-250px);
+					}
+				}
+				&:nth-child(2){
+					img{
+						transform: translateX(-430px);
+					}
+				}
+				&:nth-child(3){
+					img{
+						transform: translateX(-380px);
+					}
+				}
+				&:last-child{
+					img{
+						transform: translateX(-250px);
+					}
+				}
+			}
+		}
+		footer{
+			.footer-container {
+				.footer-row{
+					flex-direction: column;
+					gap: 20px;
+					> * {
+						flex-wrap: wrap;
+						align-items: center;
+						justify-content: center;
+					}
+					.f-row2-left{
+						flex-direction: column;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body{
+		header{
+			.carousel-item{
+				&:first-child{
+					img{
+						transform: translateX(-350px);
+					}
+				}
+				&:nth-child(2){
+					img{
+						transform: translateX(-520px);
+					}
+				}
+				&:nth-child(3){
+					img{
+						transform: translateX(-450px);
+					}
+				}
+				&:last-child{
+					img{
+						transform: translateX(-320px);
+					}
+				}
+			}
+		}
 	}
 }
