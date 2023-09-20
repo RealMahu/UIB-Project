@@ -1,269 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="/images/POG-Logo.ico" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/2feee24214.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+	<link rel="shortcut icon" href="/images/POG-Logo.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<script src="https://kit.fontawesome.com/2feee24214.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles/style.css">
     <title>POG.com</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-  </head>
-  <body class="bg-light bg-gradient">
-    <!-- Navbar - Danny -->
-    <nav
-      class="px-5 navbar navbar-expand-lg bg-dark fixed-top"
-      style="--bs-bg-opacity: 0.95"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
-          ><img src="/images/POG-Logo.webp" width="40px" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul
-            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 500px"
-          >
-            <!-- Spiele Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Spiele</a
-              >
-              <ul class="dropdown-menu" data-bs-theme="light">
-                <li
-                  class="d-flex align-items-center justify-content-between dropdown-item-arrow"
-                >
-                  <a
-                    class="dropdown-item fw-bold"
-                    style="font-size: 1rem; color: #ad0012"
-                    href="#"
-                    >CD PROJECT RED</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item fw-bold" href="#">Neu erschienen</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item fw-bold" href="#">Beliebte Titel</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item fw-bold" href="#">Im Angebot</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Rollenspiel</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Action</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Abenteuer</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Strategie</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Offene Spielwelt</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Indie</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Shooter</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Plattformer</a>
-                </li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Städtebauer</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li
-                  class="d-flex align-items-center justify-content-center dropdown-item-arrow"
-                >
-                  <a class="dropdown-item" href="#">Alle Spiele</a>
-                  <ul
-                    class="dropdown-menu dropdown-submenu"
-                    data-bs-theme="light"
-                  >
-                    <li class="p-5">
-                      <div class="dropdown-submenu-content p-5 row row-cols-2">
-                        <div class="card" style="width: 15rem">
-                          <img
-                            src="/images/cyberpunk/cyberpunkt_bs_background_800.webp"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              Some quick example text to build on the card title
-                              and make up the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                        <div class="card bg-warning" style="width: 18rem"></div>
-                      </div>
-                      <div class="dropdown-submenu-content p-5 row row-cols-2">
-                        <div class="card bg-primary"></div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <!-- Infos Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Infos</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <!-- Forum Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Forum</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <!-- Hilfe Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Hilfe</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <!-- Login Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Einloggen</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Header - Danny -->
-    <header>
-      <div>
-        <h2></h2>
-      </div>
-    </header>
+</head>
+<body>
+	<!-- Navbar - Danny -->
+  <nav class="px-lg-5 px-md-4 px-0 navbar navbar-expand-lg bg-black fixed-top" style="--bs-bg-opacity: .8;" data-bs-theme="dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="/images/POG-Logo.webp" width="40px" alt=""></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarScroll">
+				<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 500px">
+					<!-- Spiele Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Spiele</a>
+						<ul class="dropdown-menu" data-bs-theme="light">
+							<li class="d-flex align-items-center justify-content-between dropdown-item-arrow">
+								<a class="dropdown-item fw-bold" style="font-size: 1rem; color: #AD0012;" href="#">CD PROJECT RED</a>
+							</li>
+							<li><hr class="dropdown-divider"/></li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item fw-bold" href="#">Neu erschienen</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item fw-bold" href="#">Beliebte Titel</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item fw-bold" href="#">Im Angebot</a>
+							</li>
+							<li><hr class="dropdown-divider"/></li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Rollenspiel</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Action</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Abenteuer</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Strategie</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Offene Spielwelt</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Indie</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Shooter</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Plattformer</a>
+								<div class="container m-0 dropdown-submenu">
+									<div class="row">
+										<p class="m-0 fs-5 fw-light">PLATTFORMERSPIELE ENTDECKEN</p>
+									</div>
+									<hr class="dropdown-divider"/>
+									<div class="row row-cols-lg-3 row-cols-2 p-0 mb-4 mt-3">
+										<div class="col">
+											<a href="#" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/ghostmaster.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-ubuntu"></i>
+														</div>
+														<a href="#" class="btn btn-sm btn-price btn-light">5.99€</a>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="#" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/control.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-50%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">5.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="#" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/encodya.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-apple"></i>
+															<i class="bi bi-ubuntu"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-50%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">45.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="row row-cols-lg-3 row-cols-2 p-0">
+										<div class="col">
+											<a href="#" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/shadowgrounds.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-apple"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-42%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">24.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="index.html" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/divinity.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-apple"></i>
+															<i class="bi bi-ubuntu"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-12%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">5.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col rounded-0">
+											<a href="#" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/metro.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-apple"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-50%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">36.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<hr class="dropdown-divider mt-4"/>
+									<div class="row mx-1 py-2">
+										<button class="btn btn-outline-secondary fs-5" type="button">Alle Plattformer anzeigen</button>
+									</div>
+								</div>
+							</li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Städtebauer</a>
+								<div class="container m-0 dropdown-submenu">
+									<div class="row">
+										<p class="m-0 fs-5 fw-light">STÄDTEBAUSPIELE ENTDECKEN</p>
+									</div>
+									<hr class="dropdown-divider"/>
+									<div class="row row-cols-lg-3 row-cols-2 p-0 mb-4 mt-3">
+										<div class="col">
+											<a href="#" class="card-link">
+												<div href="#" class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/witcher.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-ubuntu"></i>
+														</div>
+														<a href="#" class="btn btn-sm btn-price btn-light">5.99€</a>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="#" class="card-link">
+												<div href="#" class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/prodeus.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-50%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">5.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="#" class="card-link">
+												<div href="#" class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/lula.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-apple"></i>
+															<i class="bi bi-ubuntu"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-50%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">45.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="row row-cols-lg-3 row-cols-2 p-0">
+										<div class="col">
+											<a href="#" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/diablo.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-apple"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-50%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">5.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="index.html" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/cyberpunk.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-apple"></i>
+															<i class="bi bi-ubuntu"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-50%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">5.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a href="#" class="card-link">
+												<div class="card nav-card" style="width: 12rem;">
+													<img src="/images/dropdown-card/baldurs.jpg" class="card-img-top" alt="...">
+													<div class="card-body d-flex justify-content-between align-items-center card-content-padding">
+														<div class="card-icons">
+															<i class="bi bi-windows"></i>
+															<i class="bi bi-apple"></i>
+														</div>
+														<div class="card-btns">
+															<a href="#" class="btn btn-sm btn-secondary">-50%</a>
+															<a href="#" class="btn btn-sm btn-price btn-light">5.99€</a>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<hr class="dropdown-divider mt-4"/>
+									<div class="row mx-1 py-2">
+										<button class="btn btn-outline-secondary fs-5" type="button">Alle Städtebauer anzeigen</button>
+									</div>
+								</div>
+							</li>
+							<li><hr class="dropdown-divider"/></li>
+							<li class="d-flex align-items-center justify-content-center dropdown-item-arrow">
+								<a class="dropdown-item" href="#">Alle Spiele</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Infos Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Infos</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"/></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+					<!-- Forum Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Forum</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"/></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+					<!-- Hilfe Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hilfe</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"/></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+					<!-- Login Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Einloggen</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"/></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="d-flex" role="search" >
+					<input class="form-control me-3 " type="search" placeholder="Search" aria-label="Search"/>
+					<button class="btn btn-outline-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</form>
+				<button class="btn btn-outline-light ms-2 mt-3 mt-lg-0 btn-cart" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+			</div>
+		</div>
+  </nav>
+	<!-- Header - Danny -->
+  <header>
+		<a href="#" class="highlight d-none d-lg-flex">
+			<div class="highlight-content px-5 px-md-0">
+				<div class="highlight-itemsL">
+					<img src="/images/main-slides/baldursgate_logo_480x285.png" class="w-75" alt="">
+					<div class="itemsL-text">
+						<p><i class="bi bi-windows"></i> Jetzt erhältlich</p>
+						<h3>Baldur's Gate 3</h3>
+					</div>
+				</div>
+				<div class="highlight-itemsR">
+					<button type="button" class="btn btn-purple">-16%</button>
+					<button type="button" class="btn btn-transparent">24.39 €</button>
+					<button type="button" class="btn btn-green"><i class="fa-solid fa-cart-plus"></i> In den Einkaufswagen</button>
+				</div>
+			</div>
+		</a>
+		<div class="container section-divider g-0 pb-2 mt-5 mt-lg-0 w-auto mx-3 mx-sm-auto mx-md-auto">
+			<div class="d-flex align-items-center pt-4 pt-lg-0">
+				<i class="fa-solid fa-bolt" style="color: yellow;"></i>
+				<h2 class="mx-2 my-0">Highlights</h2>
+			</div>
+		</div>
+		<div class="mt-3 container">
+			<div class="container">
+				<div id="carouselHeader" class="carousel slide" data-bs-ride="carousel"> <!-- data-bs-ride="carousel" -->
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<a href="#" class="carousel-item active">
+							<img src="/images/main-slides/baldursgate_bs_background_1275.webp" class="d-block w-auto rounded-2" alt="...">
+							<div class="carousel-caption d-block d-lg-block carousel-caption-logo">
+								<img src="/images/main-slides/baldursgate_logo_480x285.png" alt="">
+							</div>
+							<div class="carousel-caption d-none d-md-block text-start text-white fw-bold" style="left: 25px;">
+								<p>Hier könnte ihre Werbung stehen!</p>
+								<h3>Baldur's Gate 3</h3>
+							</div>
+						</a>
+						<a href="#" class="carousel-item">
+							<img src="/images/main-slides/control_bs_background_1275.webp" class="d-block w-auto rounded-2" alt="...">
+							<div class="carousel-caption d-block d-lg-block carousel-caption-logo">
+								<img src="/images/main-slides/control_logo_480x285.png" alt="">
+							</div>
+							<div class="carousel-caption d-none d-md-block text-start text-white fw-bold" style="left: 25px;">
+								<p>Hier könnte ihre Werbung stehen!</p>
+								<h3>Control - Ultimate Edition</h3>
+							</div>
+						</a>
+						<a href="#" class="carousel-item">
+							<img src="/images/main-slides/cyberpunk_bs_background_1275.webp" class="d-block w-auto rounded-2" alt="...">
+							<div class="carousel-caption d-block d-lg-block carousel-caption-logo">
+								<img src="/images/main-slides/cyberpunk_logo_480x285.png" alt="">
+							</div>
+							<div class="carousel-caption d-none d-md-block text-start text-white fw-bold" style="left: 25px;">
+								<p class="text-black">Hier könnte ihre Werbung stehen!</p>
+								<h3>Cyberpunk 2077: Phantom Liberty</h3>
+							</div>
+						</a>
+						<a href="#" class="carousel-item">
+							<img src="/images/main-slides/witcher_bs_background_1275.webp" class="d-block w-auto rounded-2" alt="...">
+							<div class="carousel-caption d-block d-lg-block carousel-caption-logo">
+								<img src="/images/main-slides/witcher_logo_480x285.png" alt="">
+							</div>
+							<div class="carousel-caption d-none d-md-block text-start text-white fw-bold" style="left: 25px;">
+								<p class="text-black">Hier könnte ihre Werbung stehen!</p>
+								<h3>The Witcher 3: Wild Hunt - Complete Edition</h3>
+							</div>
+						</a>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
+						<i class="fa-solid fa-circle-arrow-left arrow-icon"></i>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+						<i class="fa-solid fa-circle-arrow-right arrow-icon"></i>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
     <!-- Main Area - Janis, Michelle, Nancy -->
     <main class="container">
       <section class="d-flex mb-5 lowcardCarousel">

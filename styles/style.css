@@ -25,7 +25,7 @@ body nav .dropdown-menu > li:hover > .dropdown-submenu {
   display: block;
 }
 body header {
-  margin: 0;
+  margin: 1;
 }
 body main {
   margin-top: 100px;
