@@ -24,6 +24,9 @@ body nav .dropdown-menu .dropdown-submenu {
 body nav .dropdown-menu > li:hover > .dropdown-submenu {
   display: block;
 }
+body header {
+  margin: 0;
+}
 body main {
   margin-top: 100px;
 }
@@ -78,4 +81,7 @@ body main .carouselcard:hover .infobox-bottom {
 }
 body main .carouselcard:hover .infobox-bottom .price-cart i {
   display: block !important;
+}
+body footer {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
