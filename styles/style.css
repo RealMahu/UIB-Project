@@ -139,6 +139,67 @@ body nav .dropdown-submenu .btn-outline-secondary {
 body nav li:hover > .dropdown-submenu {
   display: block;
 }
+body header {
+  margin: 1;
+}
+body main {
+  margin-top: 100px;
+}
+body main .carouselcard {
+  width: 170px;
+  height: 150px;
+}
+body main .carouselcard .card-img-top {
+  width: 100%;
+  height: 50%;
+}
+body main .carouselcard .card-body {
+  padding: 5px;
+  height: 50%;
+  width: 100%;
+}
+body main .carouselcard .card-body .infobox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body main .carouselcard .card-body .infobox .infobox-top {
+  height: 50%;
+}
+body main .carouselcard .card-body .infobox .infobox-bottom {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+body main .carouselcard .card-body .infobox .infobox-bottom .price-cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body main .carouselcard .card-body .infobox .infobox-bottom .price-cart i {
+  display: none;
+  color: black;
+  padding: 2px 7px;
+  background-color: rgb(132, 212, 11);
+  border-radius: 5px;
+}
+body main .carouselcard .card-body .infobox .infobox-bottom .price-cart a {
+  text-decoration: none;
+  color: #000;
+}
+body main .carouselcard:hover .iconwindows {
+  display: none;
+}
+body main .carouselcard:hover .infobox-bottom {
+  justify-content: end !important;
+}
+body main .carouselcard:hover .infobox-bottom .price-cart i {
+  display: block !important;
+}
+body footer {
+  margin: 0;
+}
 body header .highlight {
   height: 400px;
   background-image: url(/images/banner/baldursgateBg.webp);
