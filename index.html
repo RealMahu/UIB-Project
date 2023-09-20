@@ -16,6 +16,10 @@
     ></script>
     <link rel="stylesheet" href="styles/style.css" />
     <title>POG.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
   </head>
   <body class="bg-light bg-gradient">
     <!-- Navbar - Danny -->
@@ -262,238 +266,1101 @@
     </header>
     <!-- Main Area - Janis, Michelle, Nancy -->
     <main class="container">
-      <section class="d-flex">
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/cyperpunk.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Cyberpunk 2077: Phantom Liberty</h5>
-            <a href="#" class="product-title_price">29,99</a>
+      <section class="d-flex mb-5 lowcardCarousel">
+        <div id="carouseltwo" class="carousel carousel-dark slide">
+          <div class="carousel-indicators" style="bottom: -50px">
+            <button
+              type="button"
+              data-bs-target="#carouseltwo"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouseltwo"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouseltwo"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Witcher.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              The Witcher 3: Wild Hunt-Complete Edition
-            </h5>
-            <a href="#" class="product-title_price">49,99</a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="conatainer">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 lg-6">
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/Hive.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              The Hive
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">14,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/Hercule.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              Hercule Poirot
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">24,50€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/Unheard.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              Unheard
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">49,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/Baldurs-gate.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              Baldurs-gate 3
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">59,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 lg-6">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Unheard.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Unheard
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">39,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Baldurs-gate.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Baldurs-gate 3
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">59,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Hercule.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Hercule Poirot
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">24,50€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Hive.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            The Hive
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">14,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 lg-6">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Hercule.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Hercule Poirot
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">24,50€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Hive.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            The Hive
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">14,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Baldurs-gate.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Baldurs-gate 3
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">59,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Unheard.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Unheard
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">39,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Coverpicture.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Control Ultimate Edition</h5>
-            <a href="#" class="product-title_price">39,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Baldurs-gate.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Baldur‘s Gate 3</h5>
-            <a href="#" class="product-title_price">59,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/ENDLESS™ Space.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">ENDLESS™ Space - Definitive Edition</h5>
-            <a href="#" class="product-title_price">9,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/A Plague Tale.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">A Plague Tale: Requiem</h5>
-            <a href="#" class="product-title_price">49,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/EVERSPACE™.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">EVERSPACE™ 2</h5>
-            <a href="#" class="product-title_price">49,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Shadow Gambit.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Shadow Gambit: The Cursed Crew</h5>
-            <a href="#" class="product-title_price">39,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/SystemShock.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">System Shock</h5>
-            <a href="#" class="product-title_price">39,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Turbo.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Turbo Overkill</h5>
-            <a href="#" class="product-title_price">24,50</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Pathfinder.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Pathfinder: Wrath of the Righteous-Enhanced Edition
-            </h5>
-            <a href="#" class="product-title_price">39,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Warhammer.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Warhammer 40,000: Dawn of War II- Grand Master Collection
-            </h5>
-            <a href="#" class="product-title_price">69,99</a>
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouseltwo"
+            data-bs-slide="prev"
+            style="left: -15%"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouseltwo"
+            data-bs-slide="next"
+            style="right: -15%"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
-      <section class="d-flex">
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Hive.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">The Hive</h5>
-            <a href="#" class="product-title_price">14,99</a>
+      <section class="d-flex mb-5">
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide">
+          <div class="carousel-indicators" style="bottom: -50px">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Hercule.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Agatha Christie -Hercule Poirot:The London Case
-            </h5>
-            <a href="#" class="product-title_price">49,99</a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="conatainer">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 lg-6">
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/Coverpicture.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              Control Ultimate Edition
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">39,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/cyperpunk.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              Cyperpunk 2077
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">29,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/Witcher.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              The Witcher 3
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">49,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/Baldurs-gate.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              Baldurs-gate 3
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">59,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/ENDLESS™ Space.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              ENDLESS™ Space
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">9,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/A Plague Tale.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              A Plague Tale
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">49,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/EVERSPACE™.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              EVERSPACE™ 2
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">49,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/cards/small/Shadow Gambit.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="infobox">
+                          <div class="infobox-top">
+                            <h5 class="card-title" style="font-size: small">
+                              Shadow Gambit
+                            </h5>
+                          </div>
+                          <div class="infobox-bottom">
+                            <div class="iconwindows">
+                              <i class="bi bi-windows"></i>
+                            </div>
+                            <div class="price-cart">
+                              <a href="#" class="product-title_price">39,99€</a>
+                              <i class="bi bi-cart4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 lg-6">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Shadow Gambit.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Shadow Gambit
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">39,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/cyperpunk.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Cyperpunk 2077
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">29,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Witcher.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            The Witcher 3
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">49,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Baldurs-gate.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Baldurs-gate 3
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">59,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/ENDLESS™ Space.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            ENDLESS™ Space
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">9,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/A Plague Tale.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            A Plague Tale
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">49,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/EVERSPACE™.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            EVERSPACE™ 2
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">49,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Coverpicture.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Control Ultimate Edition
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">39,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 lg-6">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Shadow Gambit.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Shadow Gambit
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">39,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/cyperpunk.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Cyperpunk 2077
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">29,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Witcher.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            The Witcher 3
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">49,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Baldurs-gate.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Baldurs-gate 3
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">59,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/ENDLESS™ Space.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            ENDLESS™ Space
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">9,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/A Plague Tale.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            A Plague Tale
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">49,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/EVERSPACE™.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            EVERSPACE™ 2
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">49,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/cards/small/Coverpicture.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="infobox">
+                        <div class="infobox-top">
+                          <h5 class="card-title" style="font-size: small">
+                            Control Ultimate Edition
+                          </h5>
+                        </div>
+                        <div class="infobox-bottom">
+                          <div class="iconwindows">
+                            <i class="bi bi-windows"></i>
+                          </div>
+                          <div class="price-cart">
+                            <a href="#" class="product-title_price">39,99€</a>
+                            <i class="bi bi-cart4"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Unheard.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Unheard -Voices of Crime</h5>
-            <a href="#" class="product-title_price">49,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Baldurs-gate.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Baldur‘s Gate 3</h5>
-            <a href="#" class="product-title_price">59,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Hive.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">The Hive</h5>
-            <a href="#" class="product-title_price">14,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Hercule.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Agatha Christie -Hercule Poirot:The London Case
-            </h5>
-            <a href="#" class="product-title_price">24,50</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Unheard.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Unheard -Voices of Crime</h5>
-            <a href="#" class="product-title_price">39,99</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="images/cards/small/Baldurs-gate.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Baldur‘s Gate 3</h5>
-            <a href="#" class="product-title_price">59,99</a>
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+            style="left: -15%"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+            style="right: -15%"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
       <section></section>
@@ -504,8 +1371,13 @@
     <!-- Footer - Danny -->
     <footer></footer>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
   </body>
