@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 *, *::before, *::after {
@@ -142,6 +143,26 @@ body nav .dropdown-submenu .btn-outline-secondary {
 body nav li:hover > .dropdown-submenu {
   display: block;
 }
+body header .header-container {
+  width: 100%;
+  height: 600px;
+  background-image: url(/images/cyberpunk/cyberpunk_bg_crop_1680x655.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 70px;
+}
+body header .header-container .header-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+body header .header-container .header-logo img {
+  max-width: 100%;
+  min-width: 300px;
+}
 body header .highlight {
   height: 400px;
   background-image: url(/images/banner/baldursgateBg.webp);
@@ -223,6 +244,22 @@ body header .carousel-inner .carousel-item:last-child .carousel-caption-logo {
   top: -10%;
   left: -57%;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.9));
+}
+body main .cyberpunkHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+body main .cyberpunkHeader .underHeader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+body main .cyberpunkHeader .underHeader .bi::after {
+  content: " |";
+  font-style: normal;
 }
 body main .breadcrumb-list {
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
@@ -526,6 +563,194 @@ body main .dreiD .dreiD-card .character {
   position: absolute;
   z-index: -1;
 }
+body main .cyberpunkCarousel .cyberpunkGrid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+body main .cyberpunkInfo {
+  display: flex;
+  min-height: 600px;
+  gap: 30px;
+}
+body main .cyberpunkInfo .cpInfoL {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body main .cyberpunkInfo .cpInfoL .headline-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #8d8d8d;
+}
+body main .cyberpunkInfo .cpInfoL .paragraph-wrapper {
+  width: 100%;
+  padding: 20px;
+  background-color: #eeeeee;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+body main .cyberpunkInfo .cpInfoL .paragraph2-wrapper {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5333333333);
+  margin: 25px 0;
+}
+body main .cyberpunkInfo .cpInfoL .infoimg-wrapper {
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+body main .cyberpunkInfo .cpInfoL .infoimg-wrapper img {
+  width: 100%;
+}
+body main .cyberpunkInfo .cpInfoR {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body main .cyberpunkInfo .cpInfoR .headline-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #8d8d8d;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper {
+  display: flex;
+  height: 75px;
+  width: 100%;
+  background-color: #eeeeee;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-title {
+  height: 50%;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-icons {
+  height: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-icons .bi-windows {
+  font-size: 14px;
+  opacity: 0.6;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-icons .needed-Right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-icons .needed-Right .discountTag {
+  margin: 0;
+  padding: 2px 8px;
+  background-color: purple;
+  color: #fff;
+  border-radius: 5px;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-icons .needed-Right .priceTag {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-icons .needed-Right .priceTag::after {
+  content: "59.99 €";
+  font-size: 12px;
+  text-decoration: line-through;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-icons .needed-Right i {
+  padding: 2px 8px;
+  background-color: #87b000;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info .needed-icons .needed-Right i:hover {
+  background-color: #9ccc00;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info:hover {
+  background-color: #fff;
+  transition: background-color 300ms ease;
+}
+body main .cyberpunkInfo .cpInfoR .neededGame-wrapper .neededGame-info:hover .bi-cart-plus-fill {
+  display: block !important;
+}
+body main .cyberpunkInfo .cpInfoR .headline-wrapper2 {
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 1px solid #8d8d8d;
+}
+body main .cyberpunkInfo .cpInfoR .subline-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+body main .cyberpunkInfo .cpInfoR .subline-wrapper .subline-info {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+body main .cyberpunkInfo .cpInfoR .subline-wrapper .subline-top {
+  display: flex;
+  gap: 5px;
+}
+body main .cyberpunkInfo .cpInfoR .subline-wrapper .subline-top span {
+  font-weight: bold;
+}
+body main .cyberpunkInfo .cpInfoR .subline-wrapper .subline-bot {
+  display: flex;
+  gap: 5px;
+}
+body main .cyberpunkInfo .cpInfoR .subline-wrapper .subline-bot span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+body main .cyberpunkInfo .cpInfoR .table1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body main .cyberpunkInfo .cpInfoR .table1 .table-row {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+body main .cyberpunkInfo .cpInfoR .table1 .table-row .tablefront {
+  width: 25%;
+}
+body main .cyberpunkInfo .cpInfoR .table1 .table-row .tablefront p {
+  margin: 0;
+  padding: 0;
+  opacity: 0.6;
+  text-align: start;
+}
+body main .cyberpunkInfo .cpInfoR .table1 .table-row .tableback {
+  width: 75%;
+  display: flex;
+}
+body main .cyberpunkInfo .cpInfoR .table1 .table-row .tableback p {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+body main .cyberpunkInfo .cpInfoR .table1 .table-row .tableback img {
+  width: 50px;
+  height: 50px;
+}
+body main .cyberpunkInfo .cpInfoR .table1 .table-row:hover {
+  transition: background-color 200ms ease;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+}
 body footer {
   background-color: #262626;
   height: -moz-fit-content;
@@ -726,6 +951,14 @@ body footer .footer-container .f-row3 .f-row3-right a img {
     top: -10%;
     left: -48%;
   }
+  body header .header-container {
+    width: 100%;
+    max-height: 400px;
+    background-image: url(/images/cyberpunk/cyberpunk_bg_crop_1366x655.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   body main .dannyTest2 .smallcardGrid {
     display: grid;
     gap: 20px;
@@ -807,6 +1040,14 @@ body footer .footer-container .f-row3 .f-row3-right a img {
   }
 }
 @media screen and (max-width: 768px) {
+  body header .header-container {
+    width: 100%;
+    max-height: 400px;
+    background-image: url(/images/cyberpunk/cyberpunk_bg_crop_800x655.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   body header .carousel-inner .carousel-item:first-child img {
     transform: translateX(-350px);
   }
@@ -843,5 +1084,15 @@ body footer .footer-container .f-row3 .f-row3-right a img {
     margin: 20px auto;
     grid-template-columns: repeat(1, minmax(250px, 1fr));
     grid-template-rows: repeat(8, 350px);
+  }
+}
+@media screen and (max-width: 481px) {
+  body header .header-container {
+    width: 100%;
+    max-height: 400px;
+    background-image: url(/images/cyberpunk/cyberpunkt_bg_crop_480x655.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -143,6 +143,26 @@ body{
 		}
 	}
 	header{
+		.header-container{
+			width: 100%;
+			height: 600px;
+			background-image: url(/images/cyberpunk/cyberpunk_bg_crop_1680x655.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 0 70px;
+			.header-logo{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: end;
+				justify-content: start;
+				img{
+					max-width: 100%;
+					min-width: 300px;
+				}
+			}
+		}
 		.highlight{
 			height: 400px;
 			background-image: url(/images/banner/baldursgateBg.webp);
@@ -237,6 +257,24 @@ body{
 		}
 	}
 	main{
+		.cyberpunkHeader{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 50%;
+			.underHeader{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				gap: 10px;
+				.bi{
+					&::after{
+						content: " |";
+						font-style: normal;
+					}
+				}
+			}
+		}
 		.breadcrumb-list{
 			border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 			margin-bottom: 20px;
@@ -557,6 +595,195 @@ body{
 				}
 			}
 		}
+		.cyberpunkCarousel{
+			.cyberpunkGrid{
+				display: grid;
+				gap: 5px;
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: 1fr;
+			}
+		}
+		.cyberpunkInfo{
+			display: flex;
+			min-height: 600px;
+			gap: 30px;
+			.cpInfoL{
+				width: 55%;
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				.headline-wrapper{
+					width: 100%;
+					border-bottom: 1px solid #8d8d8d;
+				}
+				.paragraph-wrapper{
+					width: 100%;
+					padding: 20px;
+					background-color: #eeeeee;
+					box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+					margin-bottom: 10px;
+				}
+				.paragraph2-wrapper{
+					font-size: 12px;
+					color: #00000088;
+					margin: 25px 0;
+				}
+				.infoimg-wrapper{
+					width: 100%;
+					box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+					img{
+						width: 100%;
+					}
+				}
+			}
+			.cpInfoR{
+				width: 45%;
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				.headline-wrapper{
+					width: 100%;
+					border-bottom: 1px solid #8d8d8d;
+				}
+				.neededGame-wrapper{
+					display: flex;
+					height: 75px;
+					width: 100%;
+					background-color: #eeeeee;
+					box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+					.neededGame-info{
+						width: 100%;
+						height: 100%;
+						display: flex;
+						flex-direction: column;
+						padding: 5px;
+						.needed-title{
+							height: 50%;
+						}
+						.needed-icons{
+							height: 50%;
+							display: flex;
+							align-items: end;
+							justify-content: space-between;
+							.bi-windows{
+								font-size: 14px;
+								opacity: 0.6;
+							}
+							.needed-Right{
+								display: flex;
+								align-items: center;
+								gap: 5px;
+								.discountTag{
+									margin: 0;
+									padding: 2px 8px;
+									background-color: purple;
+									color: #fff;
+									border-radius: 5px;
+								}
+								.priceTag{
+									position: relative;
+									margin: 0;
+									padding: 0;
+									&::after{
+										content: "59.99 €";
+										font-size: 12px;
+										text-decoration: line-through;
+										position: absolute;
+										top: -15px;
+										left: 10px;
+									}
+								}
+								i{
+									padding: 2px 8px;
+									background-color: #87b000;
+									border-radius: 5px;
+									cursor: pointer;
+									display: none;
+									box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+									&:hover{
+										background-color: #9ccc00;
+									}
+								}
+							}
+						}
+					&:hover{
+						background-color: #fff;
+						transition: background-color 300ms ease;
+						.bi-cart-plus-fill{
+							display: block!important;
+						}
+					}
+					}
+				}
+				.headline-wrapper2{
+					width: 100%;
+					margin-top: 10px;
+					border-bottom: 1px solid #8d8d8d;
+				}
+				.subline-wrapper{
+					display: flex;
+					flex-direction: column;
+					.subline-info{
+						margin: 0;
+						padding: 0;
+						font-size: 14px;
+					}
+					.subline-top{
+						display: flex;
+						gap: 5px;
+						span{
+							font-weight: bold;
+						}
+					}
+					.subline-bot{
+						display: flex;
+						gap: 5px;
+						span{
+							font-weight: bold;
+							text-decoration: underline;
+						}
+					}
+				}
+				.table1{
+					display: flex;
+					flex-direction: column;
+					gap: 15px;
+					.table-row{
+						width: 100%;
+						height: fit-content;
+						display: flex;
+						font-size: 15px;
+						padding: 5px 10px;
+						.tablefront{
+							width: 25%;
+							p{
+								margin: 0;
+								padding: 0;
+								opacity: 0.6;
+								text-align: start;
+							}
+						}
+						.tableback{
+							width: 75%;
+							display: flex;
+							p{
+								margin: 0;
+								padding: 0;
+								text-align: start;
+							}
+							img{
+								width: 50px;
+								height: 50px;
+							}
+						}
+						&:hover{
+							transition: background-color 200ms ease;
+							background-color: #ffffff80;
+						}
+					}
+				}
+			}
+		}
 	}
 	footer{
 		background-color: #262626;
@@ -802,6 +1029,14 @@ body{
 					}
 				}
 			}
+			.header-container{
+				width: 100%;
+				max-height: 400px;
+				background-image: url(/images/cyberpunk/cyberpunk_bg_crop_1366x655.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
 		}
 		main{
 			.dannyTest2{
@@ -919,6 +1154,14 @@ body{
 @media screen and (max-width: 768px) {
 	body{
 		header{
+			.header-container{
+				width: 100%;
+				max-height: 400px;
+				background-image: url(/images/cyberpunk/cyberpunk_bg_crop_800x655.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
 			.carousel-inner {
 				.carousel-item{
 					&:first-child{
@@ -977,4 +1220,20 @@ body{
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 481px) {
+	body{
+		header{
+			.header-container{
+				width: 100%;
+				max-height: 400px;
+				background-image: url(/images/cyberpunk/cyberpunkt_bg_crop_480x655.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+	
 }
