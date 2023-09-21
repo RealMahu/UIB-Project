@@ -349,6 +349,15 @@ body main .dannyTest .highcard4 {
 body main .dannyTest .highcard5 {
   background-image: url(/images/cards/big/Videospielsonderangebotsfeier-Sale.jpg);
 }
+body main .dannyTest .highcard6 {
+  background-image: url(/images/cards/big/highcard6.jpg);
+}
+body main .dannyTest .highcard7 {
+  background-image: url(/images/cards/big/highcard8.jpg);
+}
+body main .dannyTest .highcard8 {
+  background-image: url(/images/cards/big/highcard7.jpg);
+}
 body main .dannyTest2 .smallcardGrid {
   display: grid;
   gap: 20px;
