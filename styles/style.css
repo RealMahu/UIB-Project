@@ -10,6 +10,9 @@ body {
 }
 body .section-divider {
   border-bottom: 1px solid #b8b8b8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body .section-divider .bi {
   font-size: 18px;
@@ -300,6 +303,11 @@ body main .dannyTest .card {
   background-size: cover;
   height: 500px;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 0px 1000px rgba(218, 218, 218, 0.15);
+  transition: box-shadow 300ms ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body main .dannyTest .card .card-body h2 {
   font-size: 70px;
@@ -307,6 +315,24 @@ body main .dannyTest .card .card-body h2 {
 body main .dannyTest .card .card-body h5 {
   margin-top: 70px;
   font-size: 25px;
+}
+body main .dannyTest .card .btn-offers {
+  text-decoration: none;
+  background-color: rgba(0, 217, 255, 0.3411764706);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+body main .dannyTest .card .btn-offers:hover {
+  background-color: rgba(0, 217, 255, 0.5137254902);
+}
+body main .dannyTest .card:hover {
+  box-shadow: inset 0px 0px 0px 1000px rgba(218, 218, 218, 0.35);
 }
 body main .dannyTest .highcard1 {
   background-image: url(/images/cards/big/505GAMES.jpg);
@@ -336,6 +362,9 @@ body main .dannyTest2 .smallcardGrid .smallCard {
   background-color: rgba(255, 255, 255, 0.5764705882);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   transition: background-color 300ms ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body main .dannyTest2 .smallcardGrid .smallCard .smallCard-imgWrapper {
   width: 100%;
